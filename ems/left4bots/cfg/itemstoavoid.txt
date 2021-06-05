@@ -1,0 +1,2 @@
+weapon_upgradepack_explosive
+weapon_upgradepack_incendiary
