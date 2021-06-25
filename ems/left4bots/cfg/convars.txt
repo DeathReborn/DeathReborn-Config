@@ -1,11 +1,10 @@
 // ------------------------------------------------------------------
 // Left 4 Bots Death Reborn Edition
-// v2021.06B 'Death from Rooftop'
+// v2021.06B 'Death from Rooftop' Hotfix #1
 // Changelog:
-// - Removed reference to Xanaguy (Refer to this reddit post: https://www.reddit.com/r/l4d2/comments/jh0mk4/do_you_know_the_fact_about_plagiarized_by_the/)
-// - Versus override mode is now available (Base 'Die Again' difficulty needs to be enabled for this to work)
-// - Reduced back the max melee count for 1 because of melee weapon requirement such as Dr. Malroy's Laboratory campaign
-// - Added sv_pure cvar and now set to 1 by default
+// - Updated script to latest Left 4 Bots addon
+// - Fixed sb_allow_leading not having any value
+// - Changed sb_all_bot_game cvar default value to 0, since bots can interact anything we reverted to default value
 //
 // Special Thanks:
 // Goben for providing Left 4 Bots addon
@@ -21,10 +20,10 @@ allow_all_bot_survivor_team 1
 hud_deathnotice_threats 1
 sb_debug_apoproach_wait_time 0
 sb_allow_shoot_through_survivors 0
-sb_allow_leading
+sb_allow_leading 0
 sb_escort 1
 sb_transition 0
-sb_all_bot_game 1
+sb_all_bot_game 0
 sb_battlestation_give_up_range_from_human 100
 sb_battlestation_human_hold_time 99999
 sb_close_checkpoint_door_interval 0.3
