@@ -1,10 +1,14 @@
 // ------------------------------------------------------------------
-// Left 4 Bots Death Reborn Edition
-// v2021.06B 'Death from Rooftop' Hotfix #1
+// Left 4 Bots Death Reborn Edition 5
+//
 // Changelog:
 // - Updated script to latest Left 4 Bots addon
-// - Fixed sb_allow_leading not having any value
-// - Changed sb_all_bot_game cvar default value to 0, since bots can interact anything we reverted to default value
+// - tank_molotov_chance value has been reduced to 40% (Since mostly player throws Tank instead of bots)
+// - Now bots will throw vomit jar again
+// - sorry_chance value reduced to 60% (It was 80%, and officially approved one of meaningless changes)
+// - rock_shoot_range reduced again to 800 (Was 1000)
+// - Bots no longer pickup melee weapon (Now you don't need to worry about your bot stealing your melee weapon)
+// - Die Again difficulty is removed
 //
 // Special Thanks:
 // Goben for providing Left 4 Bots addon
@@ -40,7 +44,7 @@ sb_locomotion_wait_threshold 0
 sb_use_button_range 1000
 sb_max_battlestation_range_from_human 150
 sb_max_scavenge_separation 2000
-sb_max_team_melee_weapons 1
+sb_max_team_melee_weapons 0
 sb_melee_approach_victim 0
 sb_min_attention_notice_time 999
 sb_min_orphan_time_to_cover 0
@@ -114,61 +118,3 @@ sv_vote_creation_timer 0 // Removes meaningless vote cooldown
 sv_consistency 0 // Removes consistency check
 sv_pure 1 // All mods are enabled
 survival_round_restart_delay 5 // Faster restart round
-
-// --------------------------------------------------
-// 'Die Again' Difficulty
-// Special Infected spawn cooldown adjusted to match Versus respawn cooldown, SI have improved AI
-// Uncomment all of the cvars below to turn on 'Die Again' Mode
-// --------------------------------------------------
-//z_hunter_lunge_pitch 95
-//z_lunge_interval 0
-//hunter_pounce_loft_rate 0.0375
-//hunter_pounce_max_loft_angle 90
-//hunter_pounce_ready_range 2000
-//boomer_exposed_time_tolerance 0
-//boomer_vomit_delay 0.0
-//z_female_boomer_spawn_chance 50
-//smoker_escape_range 750
-//smoker_tongue_delay 0
-//tongue_dropping_to_ground_time 0.7
-//z_jockey_ride_hazard_scan_distance 1900
-//z_jockey_ride_scan_distance 3000
-//z_jockey_ride_scan_interval 1.50
-//z_jockey_leap_time 0.0
-//z_jockey_lookahead 1600
-//z_jockey_min_ledge_distance 0
-//z_jockey_leap_range 675
-//jockey_pounce_max_loft_angle 90
-//jockey_pounce_loft_rate 0.0375
-//z_charge_warmup 0.5
-//tank_run_spawn_delay 3
-//tank_stuck_visibility_tolerance_choose_new_target 1.5
-//tank_stuck_time_choose_new_target 0.5
-//tank_stuck_visibility_tolerance_suicide 60
-//tank_stasis_time_suicide 90
-//tank_throw_aim_error 25
-//tank_throw_loft_rate 0.016
-//tank_throw_max_loft_angle 90
-//z_tank_attack_interval 0.175
-//tank_throw_allow_range 675
-//tank_throw_lead_time_factor 0.13
-//tank_visibility_tolerance_suicide 150
-//nb_path_segment_influence_radius 2147483647
-//nb_path_draw_inc 2147483647
-//nb_saccade_speed 4150
-//nb_saccade_time 0
-//nb_speed_look_ahead_range 338
-//nb_goal_look_ahead_range 2147483647
-//director_special_initial_spawn_delay_max_extra 90
-//director_special_initial_spawn_delay_max 30
-//director_special_initial_spawn_delay_min 15
-
-// --------------------------------------------------
-// 'Die Again' Difficulty - Versus Override
-// Adjusts respawn cooldown to be real versus mode
-// Uncomment all of the cvars below to override normal versus cooldown (Note: Above Die Again difficulty should be uncommented first to use this)
-// --------------------------------------------------
-
-//director_special_initial_spawn_delay_max_extra 60
-//director_special_initial_spawn_delay_max 20
-//director_special_initial_spawn_delay_min 15
