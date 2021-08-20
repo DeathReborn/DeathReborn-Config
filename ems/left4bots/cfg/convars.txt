@@ -1,18 +1,15 @@
 // ------------------------------------------------------------------
-// Left 4 Bots Death Reborn Edition 5
+// Left 4 Bots Death Reborn Edition 5.1
+// Last updated on August 20, 2021
 //
 // Changelog:
-// - Updated script to latest Left 4 Bots addon
-// - tank_molotov_chance value has been reduced to 40% (Since mostly player throws Tank instead of bots)
-// - Now bots will throw vomit jar again
-// - sorry_chance value reduced to 60% (It was 80%, and officially approved one of meaningless changes)
-// - rock_shoot_range reduced again to 800 (Was 1000)
-// - Bots no longer pickup melee weapon (Now you don't need to worry about your bot stealing your melee weapon)
-// - Die Again difficulty is removed
+// - Rebased the Core cvar to Competitive-Bots+ Edition
+// - tank_molotov_chance value has been reduced to 20% (Was 40%)
 //
 // Special Thanks:
 // Goben for providing Left 4 Bots addon
-// Omixsat, 3mst1, H.U.N.K for providing some cvars
+// Omixsat for providing Competitive-Bots+
+// 3mst1, H.U.N.K for providing some cvars
 // And you!
 // ------------------------------------------------------------------
 
@@ -21,69 +18,63 @@
 // Don't touch unless you know what are you doing
 // ------------------------------
 allow_all_bot_survivor_team 1
-hud_deathnotice_threats 1
 sb_debug_apoproach_wait_time 0
 sb_allow_shoot_through_survivors 0
-sb_allow_leading 0
 sb_escort 1
-sb_transition 0
-sb_all_bot_game 0
+sb_all_bot_game 1
 sb_battlestation_give_up_range_from_human 100
-sb_battlestation_human_hold_time 99999
-sb_close_checkpoint_door_interval 0.3
-sb_combat_saccade_speed 99999
+sb_battlestation_human_hold_time 0.25
+sb_close_checkpoint_door_interval 0.2
+sb_combat_saccade_speed 2250
 sb_enforce_proximity_lookat_timeout 0.0
-sb_enforce_proximity_range 12450
-sb_follow_stress_factor 0
+sb_enforce_proximity_range 10000
+sb_follow_stress_factor 1
 sb_friend_immobilized_reaction_time_expert 0
 sb_friend_immobilized_reaction_time_hard 0
 sb_friend_immobilized_reaction_time_normal 0
 sb_friend_immobilized_reaction_time_vs 0
+sb_hindrance_range 100
 sb_reachable_cache_paranoia 0
 sb_locomotion_wait_threshold 0
 sb_use_button_range 1000
-sb_max_battlestation_range_from_human 150
+sb_max_battlestation_range_from_human 290
 sb_max_scavenge_separation 2000
 sb_max_team_melee_weapons 0
 sb_melee_approach_victim 0
-sb_min_attention_notice_time 999
+sb_min_attention_notice_time 0
 sb_min_orphan_time_to_cover 0
-sb_narrow_corridor_width 50
-sb_neighbor_range 800
-sb_normal_saccade_speed 99999
+sb_neighbor_range 100
+sb_normal_saccade_speed 1500
 sb_path_lookahead_range 1000
 sb_pushscale 4
 sb_reachability_cache_lifetime 0
 sb_rescue_vehicle_loading_range 50
-sb_revive_friend_distance 130
-sb_separation_danger_max_range 800
-sb_separation_danger_min_range 150
-sb_separation_range 150
+sb_revive_friend_distance 127
+sb_separation_danger_max_range 300
+sb_separation_danger_min_range 84
+sb_separation_range 300
 sb_sidestep_for_horde 0
-sb_temp_health_consider_factor 0.8
+sb_temp_health_consider_factor 1
 sb_threat_exposure_stop 2147483646
 sb_threat_exposure_walk 2147483647
-sb_near_hearing_range 5000
+sb_near_hearing_range 10000
 sb_far_hearing_range 2147483647
 sb_threat_very_close_range 50
-sb_close_threat_range 50
-sb_threat_very_close_range 150
-sb_threat_close_range 300
-sb_threat_medium_range 1000
-sb_threat_far_range 5000
+sb_close_threat_range 75
+sb_threat_close_range 50
+sb_threat_medium_range 3000
+sb_threat_far_range 8000
 sb_threat_very_far_range 2147483647
-sb_toughness_buffer 0
+sb_toughness_buffer 76
 sb_vomit_blind_time 0
-survivor_calm_intensity 0
-survivor_calm_damage_delay 0
-survivor_calm_deploy_delay 0
-survivor_calm_no_flashlight 0
-survivor_calm_recent_enemy_delay 0
-survivor_calm_weapon_delay 0
-survivor_vision_range_obscured 2147483646
-survivor_vision_range 2147483646
-survivor_lazy_active_set 0
-survivor_incap_hopeless_decay_rate 300
+survivor_calm_intensity 0.05
+survivor_calm_damage_delay 1
+survivor_calm_deploy_delay 1
+survivor_calm_no_flashlight 0.6
+survivor_calm_recent_enemy_delay 0.1
+survivor_calm_weapon_delay 1
+survivor_vision_range_obscured 1500
+survivor_vision_range 3000
 sb_force_max_intensity "Coach"
 sb_force_max_intensity "Ellis"
 sb_force_max_intensity "Rochelle"
@@ -92,17 +83,6 @@ sb_force_max_intensity "Bill"
 sb_force_max_intensity "Louis"
 sb_force_max_intensity "Francis"
 sb_force_max_intensity "Zoey"
-
-// Additional Tweaks
-nb_saccade_speed 99999
-nb_saccade_time 0
-nb_update_frequency 0
-nb_update_framelimit 15
-nb_head_aim_settle_duration 0
-nb_head_aim_steady_max_rate 99999
-nb_yaw_rate 99999
-nb_avoid 1
-nb_avoid_interval 0.2
 
 // --------------------------------------------------
 // Fixes and improvements
