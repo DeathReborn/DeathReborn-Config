@@ -77,15 +77,6 @@ sb_force_max_intensity Louis
 sb_force_max_intensity Francis
 sb_force_max_intensity Zoey
 
-nb_saccade_speed 2250
-nb_saccade_time 0.03
-nb_update_frequency 0.03
-nb_head_aim_settle_duration 0.15
-nb_head_aim_steady_max_rate 200
-nb_yaw_rate 500
-nb_avoid 1
-nb_avoid_interval 0.2
-
 survivor_calm_intensity 0.05
 survivor_calm_damage_delay 1
 survivor_calm_deploy_delay 1
