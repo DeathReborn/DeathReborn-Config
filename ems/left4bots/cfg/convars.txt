@@ -1,10 +1,10 @@
 // ------------------------------------------------------------------
-// Left 4 Bots Death Reborn Edition 5.1
-// Last updated on August 20, 2021
+// Left 4 Bots Death Reborn Edition 5.2
+// Last updated on August 22, 2021
 //
 // Changelog:
-// - Rebased the Core cvar to Competitive-Bots+ Edition
-// - tank_molotov_chance value has been reduced to 20% (Was 40%)
+// - Improved bot responsiveness
+// - Rebalanced Hunter and Jockey
 //
 // Special Thanks:
 // Goben for providing Left 4 Bots addon
@@ -20,53 +20,72 @@
 allow_all_bot_survivor_team 1
 sb_debug_apoproach_wait_time 0
 sb_allow_shoot_through_survivors 0
-sb_escort 1
+sb_escort 0
 sb_all_bot_game 1
 sb_battlestation_give_up_range_from_human 100
-sb_battlestation_human_hold_time 0.25
-sb_close_checkpoint_door_interval 0.2
+sb_battlestation_human_hold_time 0
+sb_close_checkpoint_door_interval 0.15
 sb_combat_saccade_speed 2250
 sb_enforce_proximity_lookat_timeout 0.0
 sb_enforce_proximity_range 10000
 sb_follow_stress_factor 1
-sb_friend_immobilized_reaction_time_expert 0
-sb_friend_immobilized_reaction_time_hard 0
-sb_friend_immobilized_reaction_time_normal 0
-sb_friend_immobilized_reaction_time_vs 0
+sb_friend_immobilized_reaction_time_expert 0.001
+sb_friend_immobilized_reaction_time_hard 0.001
+sb_friend_immobilized_reaction_time_normal 0.001
+sb_friend_immobilized_reaction_time_vs 0.001
 sb_hindrance_range 100
 sb_reachable_cache_paranoia 0
 sb_locomotion_wait_threshold 0
 sb_use_button_range 1000
 sb_max_battlestation_range_from_human 290
-sb_max_scavenge_separation 2000
+sb_max_scavenge_separation 800
 sb_max_team_melee_weapons 0
 sb_melee_approach_victim 0
 sb_min_attention_notice_time 0
 sb_min_orphan_time_to_cover 0
+sb_narrow_corridor_width 50
 sb_neighbor_range 100
 sb_normal_saccade_speed 1500
 sb_path_lookahead_range 1000
 sb_pushscale 4
 sb_reachability_cache_lifetime 0
 sb_rescue_vehicle_loading_range 50
-sb_revive_friend_distance 127
+sb_revive_friend_distance 130
 sb_separation_danger_max_range 300
 sb_separation_danger_min_range 84
 sb_separation_range 300
 sb_sidestep_for_horde 0
-sb_temp_health_consider_factor 1
+sb_temp_health_consider_factor 0.7
 sb_threat_exposure_stop 2147483646
 sb_threat_exposure_walk 2147483647
 sb_near_hearing_range 10000
 sb_far_hearing_range 2147483647
-sb_threat_very_close_range 50
-sb_close_threat_range 75
-sb_threat_close_range 50
-sb_threat_medium_range 3000
-sb_threat_far_range 8000
+sb_threat_very_close_range 250
+sb_close_threat_range 250
+sb_threat_close_range 500
+sb_threat_medium_range 2500
+sb_threat_far_range 5000
 sb_threat_very_far_range 2147483647
-sb_toughness_buffer 76
+sb_toughness_buffer 0
 sb_vomit_blind_time 0
+sb_force_max_intensity Coach
+sb_force_max_intensity Ellis
+sb_force_max_intensity Rochelle
+sb_force_max_intensity Nick
+sb_force_max_intensity Bill
+sb_force_max_intensity Louis
+sb_force_max_intensity Francis
+sb_force_max_intensity Zoey
+
+nb_saccade_speed 2250
+nb_saccade_time 0.03
+nb_update_frequency 0.03
+nb_head_aim_settle_duration 0.15
+nb_head_aim_steady_max_rate 200
+nb_yaw_rate 500
+nb_avoid 1
+nb_avoid_interval 0.2
+
 survivor_calm_intensity 0.05
 survivor_calm_damage_delay 1
 survivor_calm_deploy_delay 1
@@ -75,14 +94,6 @@ survivor_calm_recent_enemy_delay 0.1
 survivor_calm_weapon_delay 1
 survivor_vision_range_obscured 1500
 survivor_vision_range 3000
-sb_force_max_intensity "Coach"
-sb_force_max_intensity "Ellis"
-sb_force_max_intensity "Rochelle"
-sb_force_max_intensity "Nick"
-sb_force_max_intensity "Bill"
-sb_force_max_intensity "Louis"
-sb_force_max_intensity "Francis"
-sb_force_max_intensity "Zoey"
 
 // --------------------------------------------------
 // Fixes and improvements
@@ -95,6 +106,10 @@ cl_max_shadow_renderable_dist 0 // Fixes third person flashlight - Thanks to H.U
 r_flashlightfov 75 // Increases Flashlight FOV for wide lights
 elevator_movedelay 0 // Removes meaningless elevator delay 
 sv_vote_creation_timer 0 // Removes meaningless vote cooldown
+z_jockey_leap_range 100 // Jockey & Hunter rebalances
+z_leap_max_distance 100 // Jockey & Hunter rebalances
+z_leap_cooldown 0.5 // Jockey & Hunter rebalances 
+z_lunge_cooldown 0.5 // Jockey & Hunter rebalances
 sv_consistency 0 // Removes consistency check
 sv_pure 1 // All mods are enabled
 survival_round_restart_delay 5 // Faster restart round
