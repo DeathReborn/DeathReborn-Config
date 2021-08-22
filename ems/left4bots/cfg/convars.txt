@@ -24,7 +24,7 @@ sb_escort 0
 sb_all_bot_game 1
 sb_battlestation_give_up_range_from_human 100
 sb_battlestation_human_hold_time 0
-sb_close_checkpoint_door_interval 0.15
+sb_close_checkpoint_door_interval 0.2
 sb_combat_saccade_speed 2250
 sb_enforce_proximity_lookat_timeout 0.0
 sb_enforce_proximity_range 10000
