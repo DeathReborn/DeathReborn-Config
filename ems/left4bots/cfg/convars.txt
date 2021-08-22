@@ -60,11 +60,11 @@ sb_threat_exposure_stop 2147483646
 sb_threat_exposure_walk 2147483647
 sb_near_hearing_range 10000
 sb_far_hearing_range 2147483647
-sb_threat_very_close_range 250
-sb_close_threat_range 250
-sb_threat_close_range 500
-sb_threat_medium_range 2500
-sb_threat_far_range 5000
+sb_close_threat_range 75
+sb_threat_very_close_range 50
+sb_threat_close_range 50
+sb_threat_medium_range 3000
+sb_threat_far_range 8000
 sb_threat_very_far_range 2147483647
 sb_toughness_buffer 0
 sb_vomit_blind_time 0
