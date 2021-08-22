@@ -45,7 +45,7 @@ sb_min_attention_notice_time 0
 sb_min_orphan_time_to_cover 0
 sb_narrow_corridor_width 50
 sb_neighbor_range 100
-sb_normal_saccade_speed 1500
+sb_normal_saccade_speed 2000
 sb_path_lookahead_range 1000
 sb_pushscale 4
 sb_reachability_cache_lifetime 0
