@@ -1,10 +1,10 @@
 // ------------------------------------------------------------------
-// Left 4 Bots Death Reborn Edition 5.2
-// Last updated on August 22, 2021
+// Left 4 Bots Death Reborn Edition 5.3
+// Last updated on September 11, 2021
 //
 // Changelog:
-// - Improved bot responsiveness
-// - Rebalanced Hunter and Jockey
+// - Updated config files to latest version of Left 4 Bots
+// - Brought back the Tanks and threats killed message
 //
 // Special Thanks:
 // Goben for providing Left 4 Bots addon
@@ -24,7 +24,7 @@ sb_escort 0
 sb_all_bot_game 1
 sb_battlestation_give_up_range_from_human 100
 sb_battlestation_human_hold_time 0
-sb_close_checkpoint_door_interval 0.2
+sb_close_checkpoint_door_interval 0.9
 sb_combat_saccade_speed 2250
 sb_enforce_proximity_lookat_timeout 0.0
 sb_enforce_proximity_range 10000
@@ -104,3 +104,5 @@ z_lunge_cooldown 0.5 // Jockey & Hunter rebalances
 sv_consistency 0 // Removes consistency check
 sv_pure 1 // All mods are enabled
 survival_round_restart_delay 5 // Faster restart round
+hud_deathnotice_threats 1 // Displays death notice for Tanks and threats
+

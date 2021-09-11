@@ -7,6 +7,9 @@ Improved configuration made for Left 4 Bots addon with some additional gameplay 
 3. Now launch the game then load any campaigns. Now bots should be improved!
 4. Feel free to customize the script if required.
 
+# Note
+- For Left 4 Bots Death Reborn Edition related support, please do NOT ask support to Goben(The author of Left 4 Bots). Instead ask support on our issue tracker.
+
 # Thanks to
 - Goben for [Left 4 Bots](https://steamcommunity.com/sharedfiles/filedetails/?id=2279814689) addon
 - Omixsat for [Competitive-Bots+](https://steamcommunity.com/sharedfiles/filedetails/?id=655424673) addon
