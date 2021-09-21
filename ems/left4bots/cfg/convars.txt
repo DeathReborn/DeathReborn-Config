@@ -1,9 +1,9 @@
 // ------------------------------------------------------------------
-// Left 4 Bots Death Reborn Edition 5.4
+// Left 4 Bots Death Reborn Edition 5.4.1
 // Last updated on September 11, 2021
 //
 // Changelog:
-// - Bots no longer throws Bile Jar to tank anymore
+// - Bots will pickup and deploy incendiary/explosive ammo again
 //
 // Special Thanks:
 // Goben for providing Left 4 Bots addon
