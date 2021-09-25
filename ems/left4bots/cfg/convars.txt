@@ -1,9 +1,9 @@
 // ------------------------------------------------------------------
-// Left 4 Bots Death Reborn Edition 5.4.1
+// Left 4 Bots Death Reborn Edition 5.5
 // Last updated on September 11, 2021
 //
 // Changelog:
-// - Bots will pickup and deploy incendiary/explosive ammo again
+// - Improved Bot responsiveness and saccade speed
 //
 // Special Thanks:
 // Goben for providing Left 4 Bots addon
@@ -24,7 +24,7 @@ sb_all_bot_game 1
 sb_battlestation_give_up_range_from_human 100
 sb_battlestation_human_hold_time 0
 sb_close_checkpoint_door_interval 0.9
-sb_combat_saccade_speed 2250
+sb_combat_saccade_speed 10000
 sb_enforce_proximity_lookat_timeout 0.0
 sb_enforce_proximity_range 10000
 sb_follow_stress_factor 1
@@ -40,50 +40,58 @@ sb_max_battlestation_range_from_human 290
 sb_max_scavenge_separation 800
 sb_max_team_melee_weapons 0
 sb_melee_approach_victim 0
-sb_min_attention_notice_time 0
+sb_min_attention_notice_time 999
 sb_min_orphan_time_to_cover 0
 sb_narrow_corridor_width 50
-sb_neighbor_range 100
-sb_normal_saccade_speed 2000
+sb_neighbor_range 300
+sb_normal_saccade_speed 10000
 sb_path_lookahead_range 1000
 sb_pushscale 4
 sb_reachability_cache_lifetime 0
 sb_rescue_vehicle_loading_range 50
 sb_revive_friend_distance 130
 sb_separation_danger_max_range 300
-sb_separation_danger_min_range 84
-sb_separation_range 300
+sb_separation_danger_min_range 100
+sb_separation_range 100
 sb_sidestep_for_horde 0
 sb_temp_health_consider_factor 0.7
 sb_threat_exposure_stop 2147483646
 sb_threat_exposure_walk 2147483647
 sb_near_hearing_range 10000
 sb_far_hearing_range 2147483647
-sb_close_threat_range 75
-sb_threat_very_close_range 50
-sb_threat_close_range 50
-sb_threat_medium_range 3000
-sb_threat_far_range 8000
+sb_close_threat_range 50
+sb_threat_very_close_range 150
+sb_threat_close_range 300
+sb_threat_medium_range 1000
+sb_threat_far_range 5000
 sb_threat_very_far_range 2147483647
 sb_toughness_buffer 0
 sb_vomit_blind_time 0
-sb_force_max_intensity Coach
-sb_force_max_intensity Ellis
-sb_force_max_intensity Rochelle
-sb_force_max_intensity Nick
-sb_force_max_intensity Bill
-sb_force_max_intensity Louis
-sb_force_max_intensity Francis
-sb_force_max_intensity Zoey
 
-survivor_calm_intensity 0.05
+sb_force_max_intensity "Coach"
+sb_force_max_intensity "Ellis"
+sb_force_max_intensity "Rochelle"
+sb_force_max_intensity "Nick"
+sb_force_max_intensity "Bill"
+sb_force_max_intensity "Louis"
+sb_force_max_intensity "Francis"
+sb_force_max_intensity "Zoey"
+
+survivor_calm_intensity 0
 survivor_calm_damage_delay 1
 survivor_calm_deploy_delay 1
 survivor_calm_no_flashlight 0.6
 survivor_calm_recent_enemy_delay 0.1
 survivor_calm_weapon_delay 1
-survivor_vision_range_obscured 1500
-survivor_vision_range 3000
+survivor_vision_range_obscured 10000
+survivor_vision_range 10000
+
+nb_saccade_speed 10000
+nb_saccade_time 0.001
+nb_update_frequency 0.001
+nb_update_framelimit 15
+nb_avoid 1
+nb_avoid_interval 0.1
 
 // --------------------------------------------------
 // Fixes and improvements
