@@ -1,6 +1,6 @@
 // ------------------------------------------------------------------
-// Left 4 Bots Death Reborn Edition 5.5
-// Last updated on September 11, 2021
+// Left 4 Bots Death Reborn Edition 6
+// Last updated on October 3, 2021
 //
 // Changelog:
 // - Improved Bot responsiveness and saccade speed
