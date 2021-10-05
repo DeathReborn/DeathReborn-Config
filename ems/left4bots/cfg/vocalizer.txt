@@ -1,0 +1,11 @@
+PlayerLeadOn = lead
+PlayerWaitHere = wait
+PlayerEmphaticGo = go
+PlayerWarnWitch = witch
+PlayerHelp = move
+PlayerHurryUp = move
+PlayerMoveOn = move
+PlayerStayTogether = move
+PlayerFollowMe = move
+PlayerEmphaticGo = use
+PlayerHurryUp = canceldefib

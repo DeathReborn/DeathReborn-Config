@@ -20,4 +20,5 @@ Note: Before installing, if you have existing autoexec.cfg, please back up your 
 - Lumine for creating [Enhanced AI Bots](https://steamcommunity.com/sharedfiles/filedetails/?id=1796366014)
 - Ziggy for creating [Improved Bots (Simple)](https://steamcommunity.com/sharedfiles/filedetails/?id=121071938)
 - H.U.N.K for providing some cvars
+- [GI1TcH!mg G@M3R](https://steamcommunity.com/profiles/76561198139636616) for providing ideas
 - And you!
