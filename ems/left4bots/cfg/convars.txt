@@ -1,10 +1,13 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config 6.2
-// Last updated on Oct 5, 2021
+// Death Reborn Config 6.3
+// Last updated on Oct 10, 2021
+//
+// Another minor fixes to try addressing the bot issue on The Parish. Don't expect any big improvements.
+// There will be removal of custom Navs to test bot issues
 //
 // Changelog:
-// - This project is no longer synchronized with Death Reborn, version will stay independent
-// - Adjusted bot config (again) because bots still acting dumb 
+// - spit_block_nav changed to 0 due to bot issues (Will reconsider if this mechanics are improved
+// - Reverted Sorry chance to 80 (You can still hear when bots throws molotov while other survivors are near from fire)
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
