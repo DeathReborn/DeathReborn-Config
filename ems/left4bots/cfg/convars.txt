@@ -1,13 +1,14 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config 6.3
+// Death Reborn Config 6.3.1
 // Last updated on Oct 10, 2021
 //
-// Another minor fixes to try addressing the bot issue on The Parish. Don't expect any big improvements.
-// There will be removal of custom Navs to test bot issues
+// Hotfix release to attempt for fixing the issue that bots still stuck on ladder.
+// There will be more hotfix release if issue still persists
 //
 // Changelog:
-// - spit_block_nav changed to 0 due to bot issues (Will reconsider if this mechanics are improved
-// - Reverted Sorry chance to 80 (You can still hear when bots throws molotov while other survivors are near from fire)
+// - Added custom const.nut file to attempt fixing the bot ladder stuck issue and some additional tweaks
+// - Reduced both BOT_PICKUP_RANGE and BOT_PICKUP_RANGE2 from 120 to 100 (This fix might not work properly, there will be more hotfix if issue still happens)
+// - Increased RETREAT_FROM_TANK_DINSTANCE from 150 to 200, to reduce possibility of bot survivor getting punched by tank
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
