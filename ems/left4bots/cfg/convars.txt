@@ -2,11 +2,11 @@
 // Death Reborn Config 6.4
 // Last updated on Oct 24, 2021
 //
-// This update includes removal of convars due to remaining ladder issue present on The Parish.
+// This update includes removal of most convars due to remaining ladder issue present on The Parish.
 // Starting from this version, Human-Like Survivor Bots is now required addon and must be installed.
 //
 // Changelog:
-// - Removed Bot related cvars and now archived on seperate repository (Instead Human-Like Survivor Bots is now required mods)
+// - Removed most Bot related cvars and now archived on seperate repository (Instead Human-Like Survivor Bots is now required mods)
 // - Decreased Flashlight FOV from 75 to 60
 // - custom.cfg has been removed to prevent overwriting on each update
 // (You need to make the custom.cfg file inside cfg folder manually)
@@ -18,6 +18,31 @@
 // H.U.N.K for providing some cvars
 // And you!
 // =----------------------------------------------------------------=
+
+// ------------------------------
+// Core cvars
+// Don't touch unless you know what are you doing
+// ------------------------------
+sb_friend_immobilized_reaction_time_expert 0.001
+sb_friend_immobilized_reaction_time_hard 0.001
+sb_friend_immobilized_reaction_time_normal 0.001
+sb_friend_immobilized_reaction_time_vs 0.001
+sb_normal_saccade_speed 3000
+sb_combat_saccade_speed 3000
+
+sb_force_max_intensity "Coach"
+sb_force_max_intensity "Ellis"
+sb_force_max_intensity "Rochelle"
+sb_force_max_intensity "Nick"
+sb_force_max_intensity "Bill"
+sb_force_max_intensity "Louis"
+sb_force_max_intensity "Francis"
+sb_force_max_intensity "Zoey"
+
+nb_saccade_speed 3000
+nb_saccade_time 0.001
+nb_update_frequency 0.001
+nb_update_framelimit 15
 
 // --------------------------------------------------
 // Fixes and improvements
