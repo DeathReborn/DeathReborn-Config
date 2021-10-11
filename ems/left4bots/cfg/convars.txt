@@ -1,113 +1,23 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config 6.3.1
-// Last updated on Oct 10, 2021
+// Death Reborn Config 6.4
+// Last updated on Oct 24, 2021
 //
-// Hotfix release to attempt for fixing the issue that bots still stuck on ladder.
-// There will be more hotfix release if issue still persists
+// This update includes removal of convars due to remaining ladder issue present on The Parish.
+// Starting from this version, Human-Like Survivor Bots is now required addon and must be installed.
 //
 // Changelog:
-// - Added custom const.nut file to attempt fixing the bot ladder stuck issue and some additional tweaks
-// - Reduced both BOT_PICKUP_RANGE and BOT_PICKUP_RANGE2 from 120 to 100 (This fix might not work properly, there will be more hotfix if issue still happens)
-// - Increased RETREAT_FROM_TANK_DINSTANCE from 150 to 200, to reduce possibility of bot survivor getting punched by tank
+// - Removed Bot related cvars and now archived on seperate repository (Instead Human-Like Survivor Bots is now required mods)
+// - Decreased Flashlight FOV from 75 to 60
+// - custom.cfg has been removed to prevent overwriting on each update
+// (You need to make the custom.cfg file inside cfg folder manually)
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
 // Omixsat for creating Competitive-Bots+
-// 3mst1 for creating Bots 4 Survival
-// Crazy4Ever for creating Bot Leading
 // Error 305: Cannot Load Username for creating Human-Like Survivor Bots
-// Mr. Beard and Tommy for creating Smart Bots
-// Lumine for creating Enhanced AI Bots
-// Ziggy for creating Improved Bots (Simple)
 // H.U.N.K for providing some cvars
-// GI1TcH!mg G@M3R for providing ideas
 // And you!
 // =----------------------------------------------------------------=
-
-// ------------------------------
-// Core cvars
-// Don't touch unless you know what are you doing
-// ------------------------------
-allow_all_bot_survivor_team 1 // Prevents game to restart when all human players are dead
-sb_all_bot_game 1 // Allows bots to keep playing while all humans are in spectator or dead
-sb_debug_apoproach_wait_time 0.2
-sb_allow_shoot_through_survivors 0
-sb_escort 0
-sb_battlestation_give_up_range_from_human 300
-sb_battlestation_human_hold_time 0
-sb_close_checkpoint_door_interval 0.2
-sb_combat_saccade_speed 10000
-sb_enforce_proximity_lookat_timeout 2
-sb_enforce_proximity_range 10000
-sb_follow_stress_factor 0.7
-sb_friend_immobilized_reaction_time_expert 0.001
-sb_friend_immobilized_reaction_time_hard 0.001
-sb_friend_immobilized_reaction_time_normal 0.001
-sb_friend_immobilized_reaction_time_vs 0.001
-sb_hindrance_range 100
-sb_reachable_cache_paranoia 0
-sb_locomotion_wait_threshold 0.3
-sb_use_button_range 1000
-sb_max_battlestation_range_from_human 100
-sb_max_scavenge_separation 300
-sb_max_team_melee_weapons 2
-sb_melee_approach_victim 0
-sb_min_attention_notice_time 0.1
-sb_min_orphan_time_to_cover 0.1
-sb_narrow_corridor_width 50
-sb_neighbor_range 300
-sb_normal_saccade_speed 10000
-sb_path_lookahead_range 1000
-sb_pushscale 4
-sb_reachability_cache_lifetime 1
-sb_rescue_vehicle_loading_range 30
-sb_revive_friend_distance 130
-sb_separation_danger_max_range 300
-sb_separation_danger_min_range 100
-sb_separation_range 100
-sb_sidestep_for_horde 0
-sb_temp_health_consider_factor 0.75
-sb_threat_exposure_stop 2147483646
-sb_threat_exposure_walk 2147483647
-sb_near_hearing_range 1000
-sb_far_hearing_range 2147483647
-sb_close_threat_range 0
-sb_threat_very_close_range 50
-sb_threat_close_range 150
-sb_threat_medium_range 300
-sb_threat_far_range 500
-sb_threat_very_far_range 2147483647
-sb_toughness_buffer 0
-sb_vomit_blind_time 0
-
-sb_force_max_intensity "Coach"
-sb_force_max_intensity "Ellis"
-sb_force_max_intensity "Rochelle"
-sb_force_max_intensity "Nick"
-sb_force_max_intensity "Bill"
-sb_force_max_intensity "Louis"
-sb_force_max_intensity "Francis"
-sb_force_max_intensity "Zoey"
-
-survivor_calm_intensity 0.1
-survivor_calm_damage_delay 0.1
-survivor_calm_deploy_delay 0.1
-survivor_calm_no_flashlight 0.1
-survivor_calm_recent_enemy_delay 0.1
-survivor_calm_weapon_delay 1
-survivor_vision_range_obscured 10000
-survivor_vision_range 10000
-
-nb_saccade_speed 10000
-nb_saccade_time 0.001
-nb_update_frequency 0.001
-nb_update_framelimit 15
-nb_avoid 1
-nb_avoid_interval 0.1
-nb_head_aim_settle_duration 0.1
-
-precache_all_survivors 1
-sb_transition 0
 
 // --------------------------------------------------
 // Fixes and improvements
@@ -117,7 +27,7 @@ survivor_allow_crawling 1 // Allows you to crawl at small speed while incapped
 survivor_crawl_speed 20 // Defines crawl speed
 decalfrequency 1 // Removes meaningless spray cooldown just like GoldSrc games
 cl_max_shadow_renderable_dist 0 // Fixes third person flashlight - Thanks to H.U.N.K
-r_flashlightfov 75 // Increases Flashlight FOV for wide lights
+r_flashlightfov 60 // Increases Flashlight FOV for wide lights
 elevator_movedelay 0 // Removes meaningless elevator delay 
 sv_vote_creation_timer 0 // Removes meaningless vote cooldown
 z_jockey_leap_range 100 // Jockey & Hunter rebalances
@@ -128,4 +38,3 @@ sv_consistency 0 // Removes consistency check
 sv_pure 1 // All mods are enabled
 survival_round_restart_delay 5 // Faster restart round
 hud_deathnotice_threats 1 // Displays death notice for Tanks and threats
-
