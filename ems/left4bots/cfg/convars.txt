@@ -6,7 +6,7 @@
 // Starting from this version, Human-Like Survivor Bots is now required addon and must be installed.
 //
 // Changelog:
-// - Removed most Bot related cvars and now archived on seperate repository (Instead Human-Like Survivor Bots is now required mods)
+// - Removed most Bot related cvars and now archived on seperate repository (Instead Competitive-Bots+ addon is now required)
 // - Decreased Flashlight FOV from 75 to 60
 // - custom.cfg has been removed to prevent overwriting on each update
 // (You need to make the custom.cfg file inside cfg folder manually)
