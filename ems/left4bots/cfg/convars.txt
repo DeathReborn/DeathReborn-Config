@@ -30,6 +30,8 @@ sb_friend_immobilized_reaction_time_vs 0.001
 sb_normal_saccade_speed 3000
 sb_combat_saccade_speed 3000
 
+sb_sidestep_for_horde 0
+
 sb_force_max_intensity "Coach"
 sb_force_max_intensity "Ellis"
 sb_force_max_intensity "Rochelle"
