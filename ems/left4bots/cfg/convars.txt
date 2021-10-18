@@ -14,7 +14,6 @@
 // Special Thanks:
 // Goben for creating Left 4 Bots
 // Omixsat for creating Competitive-Bots+
-// Error 305: Cannot Load Username for creating Human-Like Survivor Bots
 // H.U.N.K for providing some cvars
 // And you!
 // =----------------------------------------------------------------=
