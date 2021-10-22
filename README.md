@@ -13,12 +13,5 @@ Note: Before installing, if you have existing autoexec.cfg, please back up your 
 # Special Thanks
 - Goben for creating [Left 4 Bots](https://steamcommunity.com/sharedfiles/filedetails/?id=2279814689)
 - Omixsat for creating [Competitive-Bots+](https://steamcommunity.com/sharedfiles/filedetails/?id=655424673)
-- 3mst1 for creating [Bots 4 Survival](https://steamcommunity.com/sharedfiles/filedetails/?id=851667013)
-- Crazy4Ever for creating [Bot Leading](https://steamcommunity.com/sharedfiles/filedetails/?id=338184128)
-- Error 305: Cannot Load Username for creating [Human-Like Survivor Bots](https://steamcommunity.com/sharedfiles/filedetails/?id=1167386507)
-- Mr. Beard and Tommy for creating [Smart Bots](https://steamcommunity.com/sharedfiles/filedetails/?id=624543433)
-- Lumine for creating [Enhanced AI Bots](https://steamcommunity.com/sharedfiles/filedetails/?id=1796366014)
-- Ziggy for creating [Improved Bots (Simple)](https://steamcommunity.com/sharedfiles/filedetails/?id=121071938)
 - H.U.N.K for providing some cvars
-- [GI1TcH!mg G@M3R](https://steamcommunity.com/profiles/76561198139636616) for providing ideas
 - And you!
