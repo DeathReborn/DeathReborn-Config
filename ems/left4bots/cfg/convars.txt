@@ -2,11 +2,11 @@
 // Death Reborn Config 6.4
 // Last updated on Oct 24, 2021
 //
-// This update includes removal of most convars due to remaining ladder issue present on The Parish.
-// Starting from this version, Human-Like Survivor Bots is now required addon and must be installed.
+// This update received major changes: It is now rebased on Competitive-Bots+ with some minor changes
 //
 // Changelog:
-// - Removed most Bot related cvars and now archived on seperate repository (Instead Competitive-Bots+ addon is now required)
+// - Cvars rebased to Competitive-Bots+ with small changes
+// - Bots no longer lead the ways themselves (This caused many issues during custom campaigns so we removed it)
 // - Decreased Flashlight FOV from 75 to 60
 // - custom.cfg has been removed to prevent overwriting on each update
 // (You need to make the custom.cfg file inside cfg folder manually)
@@ -22,15 +22,65 @@
 // Core cvars
 // Don't touch unless you know what are you doing
 // ------------------------------
+
+// Base Competitive-Bots+ Cvars
+allow_all_bot_survivor_team 1
+sb_debug_apoproach_wait_time 0
+sb_allow_shoot_through_survivors 0
+sb_escort 0
+sb_all_bot_game 1
+sb_battlestation_give_up_range_from_human 100
+sb_battlestation_human_hold_time 0.25
+sb_close_checkpoint_door_interval 0.2
+sb_combat_saccade_speed 4000
+sb_enforce_proximity_lookat_timeout 0.0
+sb_enforce_proximity_range 10000
+sb_follow_stress_factor 0
 sb_friend_immobilized_reaction_time_expert 0.001
 sb_friend_immobilized_reaction_time_hard 0.001
 sb_friend_immobilized_reaction_time_normal 0.001
 sb_friend_immobilized_reaction_time_vs 0.001
-sb_normal_saccade_speed 3000
-sb_combat_saccade_speed 3000
-
+sb_reachable_cache_paranoia 0
+sb_locomotion_wait_threshold 0
+sb_use_button_range 1000
+sb_max_battlestation_range_from_human 290
+sb_max_scavenge_separation 2000
+sb_max_team_melee_weapons 1
+sb_melee_approach_victim 0
+sb_min_attention_notice_time 0
+sb_min_orphan_time_to_cover 0
+sb_neighbor_range 100
+sb_normal_saccade_speed 4000
+sb_path_lookahead_range 975
+sb_pushscale 4
+sb_reachability_cache_lifetime 0
+sb_rescue_vehicle_loading_range 50
+sb_revive_friend_distance 127
+sb_separation_danger_max_range 300
+sb_separation_danger_min_range 84
+sb_separation_range 300
 sb_sidestep_for_horde 0
-
+sb_temp_health_consider_factor 1
+sb_threat_exposure_stop 2147483646
+sb_threat_exposure_walk 2147483647
+sb_near_hearing_range 10000
+sb_far_hearing_range 2147483647
+sb_threat_very_close_range 50
+sb_close_threat_range 75
+sb_threat_close_range 50
+sb_threat_medium_range 3000
+sb_threat_far_range 8000
+sb_threat_very_far_range 2147483647
+sb_toughness_buffer 76
+sb_vomit_blind_time 0
+survivor_calm_intensity 0.05
+survivor_calm_damage_delay 1
+survivor_calm_deploy_delay 1
+survivor_calm_no_flashlight 0.6
+survivor_calm_recent_enemy_delay 0.1
+survivor_calm_weapon_delay 1
+survivor_vision_range_obscured 1500
+survivor_vision_range 3000
 sb_force_max_intensity "Coach"
 sb_force_max_intensity "Ellis"
 sb_force_max_intensity "Rochelle"
@@ -40,7 +90,8 @@ sb_force_max_intensity "Louis"
 sb_force_max_intensity "Francis"
 sb_force_max_intensity "Zoey"
 
-nb_saccade_speed 3000
+// Additional Cvars
+nb_saccade_speed 4000
 nb_saccade_time 0.001
 nb_update_frequency 0.001
 nb_update_framelimit 15
