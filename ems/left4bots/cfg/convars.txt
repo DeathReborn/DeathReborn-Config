@@ -5,11 +5,14 @@
 // This update received major changes: It is now rebased on Competitive-Bots+ with some minor changes
 //
 // Changelog:
+// - Updated config to support latest update of Left 4 Bots
 // - Cvars rebased to Competitive-Bots+ with small changes
 // - Bots no longer lead the ways themselves (This caused many issues during custom campaigns so we removed it)
 // - Decreased Flashlight FOV from 75 to 60
 // - custom.cfg has been removed to prevent overwriting on each update
 // (You need to make the custom.cfg file inside cfg folder manually)
+// - Bots can pick up and reload the Tier 3 weapons
+// - Now both human and bot survivors can replenish ammo
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
@@ -115,3 +118,5 @@ sv_consistency 0 // Removes consistency check
 sv_pure 1 // All mods are enabled
 survival_round_restart_delay 5 // Faster restart round
 hud_deathnotice_threats 1 // Displays death notice for Tanks and threats
+ammo_m60_max 600
+ammo_grenadelauncher_max 30
