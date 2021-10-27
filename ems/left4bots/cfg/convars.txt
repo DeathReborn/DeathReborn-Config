@@ -1,18 +1,14 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config 6.4
-// Last updated on Oct 24, 2021
+// Death Reborn Config 6.5
+// Last updated on Oct 27, 2021
 //
-// This update received major changes: It is now rebased on Competitive-Bots+ with some minor changes
+// This update includes some reverts that was changed after rebase of Competitive-Bots+.
 //
 // Changelog:
-// - Updated config to support latest update of Left 4 Bots
-// - Cvars rebased to Competitive-Bots+ with small changes
-// - Bots no longer lead the ways themselves (This caused many issues during custom campaigns so we removed it)
-// - Decreased Flashlight FOV from 75 to 60
-// - custom.cfg has been removed to prevent overwriting on each update
-// (You need to make the custom.cfg file inside cfg folder manually)
-// - Bots can pick up and reload the Tier 3 weapons
-// - Now both human and bot survivors can replenish ammo
+// - Now bots no longer pick up melee weapons
+// (Similar to old version of Death Reborn: Config)
+// - Spit block nav settings are enabled again
+// (This was disabled for while to prevent the bot stucking on ladder, but we realized that there is 'bots warp' command and there was no difference while enabled)
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
@@ -25,8 +21,6 @@
 // Core cvars
 // Don't touch unless you know what are you doing
 // ------------------------------
-
-// Base Competitive-Bots+ Cvars
 allow_all_bot_survivor_team 1
 sb_debug_apoproach_wait_time 0
 sb_allow_shoot_through_survivors 0
@@ -48,7 +42,7 @@ sb_locomotion_wait_threshold 0
 sb_use_button_range 1000
 sb_max_battlestation_range_from_human 290
 sb_max_scavenge_separation 2000
-sb_max_team_melee_weapons 1
+sb_max_team_melee_weapons 0
 sb_melee_approach_victim 0
 sb_min_attention_notice_time 0
 sb_min_orphan_time_to_cover 0
