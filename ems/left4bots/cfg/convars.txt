@@ -9,6 +9,7 @@
 // (Similar to old version of Death Reborn: Config)
 // - Spit block nav settings are enabled again
 // (This was disabled for while to prevent the bot stucking on ladder, but we realized that there is 'bots warp' command and there was no difference while enabled)
+// - reloadfont.cfg added. Now you can reload font on Extras menu if you installed custom fonts. (Default value is '1920 1080', but feel free to change if you are using different resolution)
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
