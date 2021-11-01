@@ -1,0 +1,96 @@
+// =----------------------------------------------------------------=
+// Death Reborn Config 6.6
+// Last updated on Nov 1, 2021
+//
+// This update includes major changes for Death Reborn: Config project.
+//
+// Changelog:
+// - Removed version name on autoexec (Instead it differs which edition are you using)
+// - Now Death Reborn: Config was split into two editions; First one is normal version(Based on default L4B convars) and second one is pro version(Based on Competitive-Bots+)
+// - Starting from this release now 2 editions with each 2 variants are available to download on releases page. (You don't need to click on Download ZIP which makes hard to download)
+// - Added cvar 'sv_pure_kick_clients 0' to prevent players being kicked
+//
+// Special Thanks:
+// Goben for creating Left 4 Bots
+// H.U.N.K for providing some cvars
+// And you!
+// =----------------------------------------------------------------=
+
+// ------------------------------
+// Core cvars
+// Don't touch unless you know what are you doing
+// ------------------------------
+allow_all_bot_survivor_team 1
+sb_all_bot_game 1
+sb_allow_shoot_through_survivors 0
+sb_battlestation_give_up_range_from_human 100
+sb_battlestation_human_hold_time 0.25
+sb_close_checkpoint_door_interval 0.5
+//sb_close_threat_range 4000
+sb_close_threat_range 0
+sb_combat_saccade_speed 2250
+sb_enforce_proximity_range 2000
+sb_far_hearing_range 500000000
+sb_follow_stress_factor 0
+sb_friend_immobilized_reaction_time_expert 0
+sb_friend_immobilized_reaction_time_hard 0
+sb_friend_immobilized_reaction_time_normal 0
+sb_friend_immobilized_reaction_time_vs 0
+sb_locomotion_wait_threshold 0.1
+sb_max_battlestation_range_from_human 150
+sb_max_scavenge_separation 700
+sb_max_team_melee_weapons 0
+sb_melee_approach_victim 0
+sb_min_attention_notice_time 1
+sb_min_orphan_time_to_cover 0
+sb_near_hearing_range 10000
+sb_neighbor_range 200
+sb_normal_saccade_speed 1500
+sb_path_lookahead_range 550
+sb_pushscale 2
+sb_reachability_cache_lifetime 0
+sb_rescue_vehicle_loading_range 200
+sb_separation_danger_max_range 300
+sb_separation_danger_min_range 150
+sb_separation_range 150
+sb_sidestep_for_horde 1
+sb_temp_health_consider_factor 0.8
+sb_threat_close_range 5000
+sb_threat_exposure_stop 500000000
+sb_threat_exposure_walk 400000000
+sb_threat_far_range 400000000
+sb_threat_medium_range 6000
+sb_threat_very_close_range 2000
+sb_threat_very_far_range 500000000
+sb_toughness_buffer 20
+sb_vomit_blind_time 0
+survivor_ff_avoidance 1
+
+// Additional Cvars
+nb_saccade_speed 4000
+nb_saccade_time 0.001
+nb_update_frequency 0.001
+nb_update_framelimit 15
+
+// --------------------------------------------------
+// Fixes and improvements
+// --------------------------------------------------
+pain_pills_decay_rate 0.27 // Pill decay rate fix
+survivor_allow_crawling 1 // Allows you to crawl at small speed while incapped
+survivor_crawl_speed 20 // Defines crawl speed
+decalfrequency 1 // Removes meaningless spray cooldown just like GoldSrc games
+cl_max_shadow_renderable_dist 0 // Fixes third person flashlight - Thanks to H.U.N.K
+r_flashlightfov 60 // Increases Flashlight FOV for wide lights
+elevator_movedelay 0 // Removes meaningless elevator delay 
+sv_vote_creation_timer 0 // Removes meaningless vote cooldown
+z_jockey_leap_range 100 // Jockey & Hunter rebalances
+z_leap_max_distance 100 // Jockey & Hunter rebalances
+z_leap_cooldown 0.5 // Jockey & Hunter rebalances 
+z_lunge_cooldown 0.5 // Jockey & Hunter rebalances
+sv_consistency 0 // Removes consistency check
+sv_pure_kick_clients 0 // Prevents clients to be kicked
+sv_pure 1 // All mods are enabled
+survival_round_restart_delay 5 // Faster restart round
+hud_deathnotice_threats 1 // Displays death notice for Tanks and threats
+ammo_m60_max 600
+ammo_grenadelauncher_max 30

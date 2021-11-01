@@ -1,15 +1,15 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config 6.5
-// Last updated on Oct 27, 2021
+// Death Reborn Config Pro 6.6
+// Last updated on Nov 1, 2021
 //
-// This update includes some reverts that was changed after rebase of Competitive-Bots+.
+// This update includes major changes for Death Reborn: Config project.
 //
 // Changelog:
-// - Now bots no longer pick up melee weapons
-// (Similar to old version of Death Reborn: Config)
-// - Spit block nav settings are enabled again
-// (This was disabled for while to prevent the bot stucking on ladder, but we realized that there is 'bots warp' command and there was no difference while enabled)
-// - reloadfont.cfg added. Now you can reload font on Extras menu if you installed custom fonts. (Default value is '1920 1080', but feel free to change if you are using different resolution)
+// - Removed version name on autoexec (Instead it differs which edition are you using)
+// - Now Death Reborn: Config was split into two editions; First one is normal version(Based on default L4B convars) and second one is pro version(Based on Competitive-Bots+)
+// - Starting from this release now 2 editions with each 2 variants are available to download on releases page. (You don't need to click on Download ZIP which makes hard to download)
+// - Added cvar 'sv_pure_kick_clients 0' to prevent players being kicked
+// - (Pro version only) Added backport Cvar 'survivor_ff_avoidance 1'
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
@@ -93,6 +93,7 @@ nb_saccade_speed 4000
 nb_saccade_time 0.001
 nb_update_frequency 0.001
 nb_update_framelimit 15
+survivor_ff_avoidance 1 // Backported from vanilla L4B cvars
 
 // --------------------------------------------------
 // Fixes and improvements
@@ -110,6 +111,7 @@ z_leap_max_distance 100 // Jockey & Hunter rebalances
 z_leap_cooldown 0.5 // Jockey & Hunter rebalances 
 z_lunge_cooldown 0.5 // Jockey & Hunter rebalances
 sv_consistency 0 // Removes consistency check
+sv_pure_kick_clients 0 // Prevents clients to be kicked
 sv_pure 1 // All mods are enabled
 survival_round_restart_delay 5 // Faster restart round
 hud_deathnotice_threats 1 // Displays death notice for Tanks and threats
