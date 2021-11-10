@@ -1,10 +1,21 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config Pro 6.7
-// Last updated on Nov 8, 2021
+// Death Reborn Config Pro 6.8
+// Last updated on Nov 14, 2021
 //
-// This update includes small changes which allows you to execute reloadfonts.cfg upon launch (Disabled by default)
+// This update includes small changes which disables ability to throw molotov when Tank is present (Bots can still pick up molotov).
 //
-// - Added 'exec reloadfonts.cfg' on autoexec.cfg (This is for people who uses custom fonts, and disabled by default. Check autoexec.cfg for details)
+// There is two reason for this change:
+// 1. When Tank is in water area (For example Swamp Fever and Hard Rain), bots will still throw molotov which just wastes all(or some) of the molotov.
+// 2. Bots can blow up collected gas which is near the tank, which is annoying on singleplayer mode. This is the reason why we decided to disable this behavior.
+//
+// I already asked the author to fix these problems on discussion section, however author of Left 4 Bots ignored this problem. This is never going to get fixed unless Goben change his mind.
+//
+// So you can think like this is temporary workaround until the author fixes this problem.
+//
+// If you are friend of Goben, please share this problem to author so it can be fixed in the future, thank you.
+//
+// Changelog:
+// - Bots no longer throws molotov against tank
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
