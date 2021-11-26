@@ -1,21 +1,13 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config Pro 6.8
-// Last updated on Nov 14, 2021
+// Death Reborn Config Pro 7
+// Last updated on Dec 5, 2021
 //
-// This update includes small changes which disables ability to throw molotov when Tank is present (Bots can still pick up molotov).
-//
-// There is two reason for this change:
-// 1. When Tank is in water area (For example Swamp Fever and Hard Rain), bots will still throw molotov which just wastes all(or some) of the molotov.
-// 2. Bots can blow up collected gas which is near the tank, which is annoying on singleplayer mode. This is the reason why we decided to disable this behavior.
-//
-// I already asked the author to fix these problems on discussion section, however author of Left 4 Bots ignored this problem. This is never going to get fixed unless Goben change his mind.
-//
-// So you can think like this is temporary workaround until the author fixes this problem.
-//
-// If you are friend of Goben, please share this problem to author so it can be fixed in the future, thank you.
+// This update reverts the molotov throwing mechanics (Yes it is enabled back again), however bots have 5% chance to throw molotov towards tank(It was 30% but reduced to test if bots rarely throw molotov at tank if player is not throwing molotov towards tank), and all T3 related features were removed as Bots T3 is going to be removed as of Death Reborn 7 update.
 //
 // Changelog:
-// - Bots no longer throws molotov against tank
+// - Reverted the changes from 6.8 (Now bots throws molotov at tank again)
+// - Reduced molotov throw chance to 5% (It was 30%)
+// - All Tier 3 features are removed, as of Bots T3 addon will be removed on Death Reborn 7
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
@@ -121,5 +113,3 @@ sv_pure_kick_clients 0 // Prevents clients to be kicked
 sv_pure 1 // All mods are enabled
 survival_round_restart_delay 5 // Faster restart round
 hud_deathnotice_threats 1 // Displays death notice for Tanks and threats
-ammo_m60_max 600
-ammo_grenadelauncher_max 30
