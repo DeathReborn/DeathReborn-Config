@@ -8,6 +8,8 @@
 // - Reverted the changes from 6.8 (Now bots throws molotov at tank again)
 // - Reduced molotov throw chance to 5% (It was 30%)
 // - All Tier 3 features are removed, as of Bots T3 addon will be removed on Death Reborn 7
+// - Now bots will heal themselves if they reach 20 or below health, regardless of which config you use
+//
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
