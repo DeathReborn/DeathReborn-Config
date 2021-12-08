@@ -1,14 +1,17 @@
 // =----------------------------------------------------------------=
-// Death Reborn Config 7
-// Last updated on Dec 5, 2021
+// Death Reborn Config 7.1
+// Last updated on Dec 8, 2021
 //
-// This update reverts the molotov throwing mechanics (Yes it is enabled back again), however bots have 5% chance to throw molotov towards tank(It was 30% but reduced to test if bots rarely throw molotov at tank if player is not throwing molotov towards tank), and all T3 related features were removed as Bots T3 is going to be removed as of Death Reborn 7 update.
+// This update is hotfix which removes the custom vocalizer.txt file since it was for people who uses our Death Reborn addon, but it no longer strictly depends on Death Reborn.
+//
+// We apologize for people who reported on Left 4 Bots that bots heal command doesn't work.
+//
+// Also next time, we ask you NOT to report any issue related to Death Reborn: Config to Goben, please use issue tracker if you find any issues)
+//
+// If you have custom vocalizer.txt installed from previous version, please download them on releases page and overwrite them on left4dead2/ems/left4bots/cfg.
 //
 // Changelog:
-// - Reverted the changes from 6.8 (Now bots throws molotov at tank again)
-// - Reduced molotov throw chance to 5% (It was 30%)
-// - All Tier 3 features are removed, as of Bots T3 addon will be removed on Death Reborn 7
-// - Now bots will heal themselves if they reach 20 or below health, regardless of which config you use
+// - Removed custom vocalizer.txt
 //
 // Special Thanks:
 // Goben for creating Left 4 Bots
